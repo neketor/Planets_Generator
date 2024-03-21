@@ -8,6 +8,8 @@ planet_types_other = ["Токсичная", "Радиационная", "Яде�
 planet_types_normal = ["Каменная", "Водная", "Пустынная"]
 terrain_types = ["Равнинная", "Холмистая", "Горная"]
 size_types = ["Карликовая планета", "Средняя планета", "Газовый гигант"]
+galaxy_types = ["Sa", "Sb", "Sc"]
+
 
 # Other_functions
 def generate_alphanum_random_string(length):
@@ -71,3 +73,12 @@ def get_pl_color(temperature, color):
 def planet_info_in_text(x, y, planet):
     draw.text((x, y), str(planet), font=planet_info)
 
+# galaxy_functions
+
+def get_galaxy_type(points, angle): # Подбирает рандом тип галактики из списка
+    if angle == 1 or angle == 2:
+        return "Sc"
+    elif angle == 3:
+        return "Sb"
+    elif angle == 4:
+        return "Sa"
