@@ -1,4 +1,4 @@
-# Planets Generator Version 1
+# Planets Generator
 
 ---
 ## О проекте:
