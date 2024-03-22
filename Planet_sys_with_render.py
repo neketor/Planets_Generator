@@ -26,10 +26,10 @@ def Planet_sys_Generator(name):
             ellipse(draw, pos[0]-pl_render_diam/2, pos[1]-pl_render_diam/2, pl_render_diam, pl_render_diam, planet.color_pl)
             Pl_sys.planets.append(planet)
             draw.text((pos[0]+pl_render_diam/2, pos[1]+pl_render_diam/2), str(len(Pl_sys.planets)), font=headline)
-            print(planet)
+            print(Pl_sys)
         r = r-r_minus
 
-    im.save('draw-ellipse-rectangle-line.jpg', quality=95)
+    im.save('image.jpg', quality=95)
     im.show()
 
 Planet_sys_Generator("Pon")

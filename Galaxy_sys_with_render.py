@@ -20,9 +20,10 @@ def galaxy_sys_generator(is_render=True):
                 print(galaxy.size)
             galaxy.radius += galaxy.radius_plus  # Увеличиваем радиус для создания спирали
             galaxy.angle += galaxy.angle_plus # Увеличиваем угол для вращения спирали
+        galaxy.diameter = galaxy.radius * 1000
         print(galaxy.radius)
         print(galaxy); print(galaxy.angle)
-        im.save('draw-ellipse-rectangle-line.jpg', quality=95)
+        im.save('image.jpg', quality=95)
         im.show()
     else:
         print(galaxy)
